@@ -85,7 +85,6 @@
  int main(void);
  int main(void)
  {
-    printf("HELLO 1");
      PaStream *stream;
      PaError err;
  
@@ -106,7 +105,6 @@
                                  patestCallback,
                                  &data );
      if( err != paNoError ) goto error;
-     printf("HELLO 2");
      err = Pa_StartStream( stream );
      if( err != paNoError ) goto error;
  
